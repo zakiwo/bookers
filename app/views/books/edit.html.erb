@@ -2,7 +2,9 @@
 
 <% if @book.errors.any? %>
   <%= @book.errors.full_messages.each do |message| %>
-    error:<%= message %>
+    <div class="error">
+      error:<%= message %>
+    </div>
   <% end %>
 <% end %>
 

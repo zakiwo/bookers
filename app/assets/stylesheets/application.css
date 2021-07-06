@@ -33,3 +33,11 @@ p, ol, ul, td {
 .checkbox{
     margin: 20px 0;
 }
+
+.error{
+    color: red;
+}
+
+.notice{
+    color: green;
+}

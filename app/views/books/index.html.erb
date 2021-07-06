@@ -1,12 +1,16 @@
 <h1>Books</h1>
 <% if @book.errors.any? %>
   <%= @book.errors.full_messages.each do |message| %>
-    error:<%= message %>
+    <div class="error">
+      error:<%= message %>
+    </div>
   <% end %>
 <% end %>
 
 <% if flash[:notice] %>
-  <%= flash[:notice] %>
+  <div class="notice">
+    <%= flash[:notice] %>
+  </div>
 <% end %>
 
 <table>
